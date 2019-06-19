@@ -1,0 +1,6 @@
+import numpy as np
+row,column = input().split('x')
+array = np.random.random((int(row),int(column)))
+np.savetxt('numpy.txt',array)
+a= np.loadtxt('numpy.txt')
+a
